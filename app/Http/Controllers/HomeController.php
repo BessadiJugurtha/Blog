@@ -3,12 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Post;
 class HomeController extends Controller
 {
     public function index(){
-    $post = \App\Post::find(1); 
-    echo $post->author->name;
-     return view('welcome');
+       
+    $posts = Post::all();
+
+    return view('welcome',[
+        'posts' => $posts
+    ]);
+
+    
 }
 }
