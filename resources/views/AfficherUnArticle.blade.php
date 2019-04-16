@@ -13,26 +13,31 @@
 <ul class="menu">
 <li class="menu-text">Blog</li>
 <li><a href="/">Home</a></li>
-<li><a href="/article">Articles</a></li>
-<li><a href="/contact">Contact</a></li>
+<li><a href=<?php echo asset('/article');?>>Articles</a></li>
+<li><a href=<?php echo asset('/contact');?>>Contact</a></li>
 </ul>
 </div>
 </div>
 
+
 <div class="callout large primary">
 <div class="row column text-center">
-@yield('content')
+<h1>Articles</h1>
 </div>
 </div>
+
 
 <div class="row medium-8 large-7 columns">
-@yield('Last_3Articles')
-
+<div class="blog-post">
+<h3>{{ $post->post_title }}</h3>
+<img class="thumbnail" src="https://placehold.it/850x350">
+<p>{{ $post->post_content }}</p>
+<div class="callout">
+<ul class="menu simple">
+<li><a href="#">Auteur :{{$post->author->name}}</a></li>
+<li><a href="#">Comments: 1</a></li>
+</ul>
 </div>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-<script>
-      $(document).foundation();
-    </script>
+</div>
 </body>
 </html>

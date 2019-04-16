@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class HomeController extends Controller
 {
     public function index(){
-    $post = \App\Post::find(1); 
-    echo $post->author->name;
-     return view('welcome');
-}
+        $last_id = Post::get()->last()->id; // il recupere le id du dernier post de la table posts
+        $post = Post::take(3)->skip($last_id -3)->get(); 
+        
+        return view('welcome',[
+            'posts' => $post
+        ]);
+    }
 }
