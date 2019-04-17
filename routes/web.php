@@ -16,5 +16,7 @@
 // });
 Route::get('/', 'HomeController@index');
 Route::get('/article', 'ArticleController@index');
-Route::get('/contact', 'ContactController@index');
 Route::get('/article/{post_name}', 'ArticleController@show');
+Route::get('/contact', 'ContactController@index');
+Route::post('/contact', 'ContactController@store');
+Route::get('/contact', 'ContactController@AfficheListeContact');

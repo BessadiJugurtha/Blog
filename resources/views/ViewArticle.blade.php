@@ -35,7 +35,7 @@
 <div class="callout">
 <ul class="menu simple">
 <li><a href="#">Auteur :{{$article->author->name}}</a></li>
-<li><a href="#">Comments: 3</a></li>
+<li><a href="#">Comments: 1</a></li>
 </ul>
 @endif
 @endforeach
@@ -50,7 +50,7 @@
 <div class="callout">
 <ul class="menu simple">
 <li><a href="#">Auteur :{{$article->author->name}}</a></li>
-<li><a href="#">Comments: 3</a></li>
+<li><a href="#">Comments: 2</a></li>
 </ul>
 @endif
 @endforeach
@@ -80,7 +80,7 @@
 <div class="callout">
 <ul class="menu simple">
 <li><a href="#">Auteur :{{$article->author->name}}</a></li>
-<li><a href="#">Comments: 3</a></li>
+<li><a href="#">Comments: 4</a></li>
 </ul>
 @endif
 @endforeach
