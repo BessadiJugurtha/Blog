@@ -8,26 +8,24 @@
 </head>
 <body>
 
-<div class="top-bar">
-<div class="top-bar-left">
+<div class="top-bar  ">
+<div class="top-bar-left ">
 <ul class="menu">
 <li class="menu-text">Blog</li>
 <li><a href="/">Home</a></li>
 <li><a href="/article">Articles</a></li>
 <li><a href="/contact">Contact</a></li>
 </ul>
+<!-- <button type="button" class="btn btn-secondary float-right">Example Button floated right</button> -->
 </div>
 </div>
-
 <div class="callout large primary">
-<div class="row column text-center">
+<div class="column text-center">
 @yield('content')
 </div>
 </div>
-
-<div class="row medium-8 large-7 columns">
+<div class="container">
 @yield('Last_3Articles')
-
 </div>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
