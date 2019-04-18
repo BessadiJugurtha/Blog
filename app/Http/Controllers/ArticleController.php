@@ -7,6 +7,11 @@ use App\Post;
 
 class ArticleController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
    public function index(){
     $articles = Post::all();
     return view('ViewArticle', ['articles'=>$articles]);

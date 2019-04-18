@@ -11,7 +11,7 @@
 <div class="top-bar-left">
 <ul class="menu">
 <li class="menu-text">Blog</li>
-<li><a href="/">Home</a></li>
+<li><a href="/home">Home</a></li>
 <li><a href=<?php echo asset('/article');?>>Articles</a></li>
 <li><a href=<?php echo asset('/contact');?>>Contact</a></li>
 </ul>

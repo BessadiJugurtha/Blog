@@ -7,7 +7,10 @@ use App\Post;
 
 class HomeController extends Controller
 {
-    public function index(){
+    
+    public function index()
+    {
+        // return view('home');
         $last_id = Post::get()->last()->id; // il recupere le id du dernier post de la table posts
         $post = Post::take(3)->skip($last_id -3)->get(); 
         
