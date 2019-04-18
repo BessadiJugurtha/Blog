@@ -1,8 +1,11 @@
 @extends('layouts/main')
+
+<link rel="stylesheet" type="text/css" href="css/styleContact.css">
 @section('content')
 <h1>Contact</h1>
 @endsection
 @section('formulaire')
+<div>
 <form action="{{ url('/contact') }}" method="POST" class= "container"  >
     {{ csrf_field() }}
     <div class="form-group center-block"  >
@@ -19,8 +22,12 @@
         <textarea class="form-control {{ $errors->has('contact_message') ? 'is-invalid' : '' }}" name="contact_message" id="contact_message" placeholder="Votre message">{{ old('contact_message') }}</textarea>                            {!! $errors->first('contact_message', '
         <div class="invalid-feedback">:message</div>') !!}
     </div>
-    <button type="submit" class="btn btn-secondary" name="btnEnvoyer">Envoyer !</button>
-</form>
+    <div>
+        <button style="background-color: #007BFF;" type="submit" class="btn btn-secondary" name="btnEnvoyer">Envoyer !</button>
+    </div>
+</form>    
+</div>
+
 @endsection
 
 

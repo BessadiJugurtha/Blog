@@ -1,6 +1,7 @@
 @extends('layouts/main')
 @section('tous_articles')
 <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <div class=" row medium-8 large-9 columns" >
 @foreach($articles as $article)
 @if($article->id <= 4)

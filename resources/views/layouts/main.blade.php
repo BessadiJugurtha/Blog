@@ -5,24 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title><?php echo str_replace(dirname($_SERVER['PHP_SELF']).'/', '', $_SERVER['PHP_SELF']);?></title>
 <style>
-
+  
 </style>
 <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<<<<<<< HEAD
-<body class="bg-dark">
-
-<div class="top-bar">
-<div class="top-bar-left">
-
-<ul class="menu">
-=======
-<body>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body style="background-color:#EEEEEE;">
 <div class="top-bar fixed-top " style="height: 9%;">
 <div class="top-bar-left nav nav-tabs">
 <ul class="menu ">
->>>>>>> 9178736541649f2643704852411b2aa5cf904a3d
 <li class="menu-text">Blog</li>
 <li><a href="/home">Home</a></li>
 <li><a href="/article">Articles</a></li>
