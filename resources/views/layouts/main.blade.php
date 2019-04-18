@@ -6,10 +6,11 @@
 <title>Foundation | Welcome</title>
 <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 </head>
-<body>
+<body class="bg-dark">
 
 <div class="top-bar">
 <div class="top-bar-left">
+
 <ul class="menu">
 <li class="menu-text">Blog</li>
 <li><a href="/">Home</a></li>
