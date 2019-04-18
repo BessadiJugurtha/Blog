@@ -1,13 +1,14 @@
 @extends('layouts/main')
 @section('tous_articles')
 <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+
 <div class=" row medium-8 large-9 columns" >
+
 @foreach($articles as $article)
 @if($article->id <= 4)
 <div class="  blog-post ">
 <h3>{{$article->post_title }}</h3>
-<img class="thumbnail" src="https://placehold.it/850x350">
+<img src="img/{{ $article->id }}.jpg">
 <p>{{$article->post_content}}</p>
 <div class="callout">
 <ul class="menu simple">
@@ -27,5 +28,5 @@
 @endsection
 
 @section('content')
-<h1>Articles</h1>
+<h1 class="p1">Articles</h1>
 @endsection

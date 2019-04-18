@@ -16,10 +16,11 @@
 <div class="top-bar-left nav nav-tabs">
 <ul class="menu ">
 <li class="menu-text">Blog</li>
-<li><a href="/home">Home</a></li>
-<li><a href="/article">Articles</a></li>
-<li><a href="/contact">Contact</a></li>
+<li><a class="a1" href="/home">Home</a></li>
+<li><a class="a2" href="/article">Articles</a></li>
+<li><a class="a3" href="/contact">Contact</a></li>
 </ul>
+
 </div >
 <div class=" top-bar-right grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
 <ul class="row menu-text" style="list-style:none;">
@@ -33,13 +34,15 @@
        {{ Auth::user()->name }} <span class="caret"></span>
   </li>
   <li><a href="{{ url('/deconnexion') }}"><button type="button" class="btn btn-primary btn-sm" >Deconnexion</button></a></li>   
+
   @endif
 </ul>
 </div>
 </div>
-<div class="callout large primary" style="height: 40%;">
-<div class="column text-center" style="margin-top: 4%;">
+<div class="callout large primary" style="height: 40%; ">
+<div class="column text-center" style="margin-top: 4%; ">
 @yield('content')
+
 </div>
 </div>
 <div class="container">

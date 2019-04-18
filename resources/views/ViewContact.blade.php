@@ -2,10 +2,11 @@
 
 <link rel="stylesheet" type="text/css" href="css/styleContact.css">
 @section('content')
-<h1>Contact</h1>
+<h1 class="p1">Contact</h1>
 @endsection
 @section('formulaire')
 <div class="formulaire">
+    <p>Votre message</p>
     <form action="{{ url('/contact') }}" method="POST" class= "container"  >
         {{ csrf_field() }}
         <div class="form-group center-block"  >
@@ -44,7 +45,7 @@
 @section('Liste_contact')
 @foreach($listes as $contact)
 <div class='comment2'>
-    <p class="p1">{{ $contact->contact_name }}</p>
+    <p class="p0">{{ $contact->contact_name }}</p>
     <p class="p2">{{ $contact->post_date }}</p>
     <p class="p3">{{ $contact->contact_message }}</p>
 </div>

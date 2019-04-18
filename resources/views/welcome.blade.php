@@ -1,7 +1,7 @@
 @extends('layouts/main')
 <link rel="stylesheet" type="text/css" href="css/style.css">
 @section('content')
-<h1>Home</h1>
+<p class="p1">Home</p>
 @endsection
 @section('Last_3Articles')
 
@@ -11,7 +11,7 @@
 <div class="cell col-md-4">
 <div class="callout ">
 <h3>{{ $post->post_name }}</h3>
-<p><img class="rounded" src="https://placehold.it/400x370&amp;text=Pegasi B" alt="image of a planet called Pegasi B"></p>
+<p><img class="rounded" src="img/img.jpg" alt="image of a planet called Pegasi B"></p>
 <p class="lead"><a href="article/{{ $post->post_name }}">{{ $post->post_title }}</a></p>
 </div>
 </div>

@@ -19,7 +19,7 @@
 </div>
 <div class="callout large primary">
 <div class="row column text-center">
-<h1>Articles</h1>
+<h1 class="p1">Articles</h1>
 </div>
 </div>
 <div class="row medium-8 large-7 columns">
