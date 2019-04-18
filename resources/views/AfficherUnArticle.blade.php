@@ -7,26 +7,21 @@
 <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 </head>
 <body>
-
 <div class="top-bar">
 <div class="top-bar-left">
 <ul class="menu">
 <li class="menu-text">Blog</li>
-<li><a href="/">Home</a></li>
+<li><a href="/home">Home</a></li>
 <li><a href=<?php echo asset('/article');?>>Articles</a></li>
 <li><a href=<?php echo asset('/contact');?>>Contact</a></li>
 </ul>
 </div>
 </div>
-
-
 <div class="callout large primary">
 <div class="row column text-center">
 <h1>Articles</h1>
 </div>
 </div>
-
-
 <div class="row medium-8 large-7 columns">
 <div class="blog-post">
 <h3>{{ $post->post_title }}</h3>
