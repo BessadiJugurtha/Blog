@@ -1,7 +1,18 @@
 
 div>ul>li>a:hover {
+	background-color: lightgray;
+	color: #007BFF;
+}
+
+div>ul>li>a {
 	background-color: #007BFF;
 	color: white;
+	border-radius: 15px 50px 30px; 
+}
+
+div>ul>li>a:active {
+	background-color: white;
+	color: #007BFF;
 }
 
 body>div>ul {

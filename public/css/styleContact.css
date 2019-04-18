@@ -5,3 +5,19 @@ form>div {
 
 }
 
+.formulaire {
+	margin: auto;
+	width: 700px;
+	padding: 20px;
+	background-color: white;
+	border: solid gray 1px;
+}
+
+.formulaire:hover {
+	border: solid #007BFF 1px;
+}
+
+
+#contact_message {
+	height: 150px;
+}
