@@ -15,7 +15,28 @@
 //     return view('welcome');
 // });
 Route::get('/home', 'HomeController@index');
-Route::get('/article', 'ArticleController@index');
+//##pour test des roles 
+// Route::get('/article', [
+// 'uses' => 'ArticleController@index',
+// 'as' => 'ViewArticle',
+// 'middleware' => 'roles',
+// 'roles' => ['Admin']
+// ]);
+Route::get('/article','ArticleController@index');
+Route::get('/controle', [
+    'uses' => 'HomeController@controle',
+    'as' => 'ViewControle',
+    'middleware' => 'roles',
+    'roles' => ['Admin'],
+    ]);
+
+    Route::post('/ajoutRole', [
+        'uses' => 'HomeController@ajouterRole',
+        'as' => 'ViewControle',
+        'middleware' => 'roles',
+        'roles' => ['Admin'],
+        ]);
+
 Route::get('/article/{post_name}', 'ArticleController@show');
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@store');

@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title><?php echo str_replace(dirname($_SERVER['PHP_SELF']).'/', '', $_SERVER['PHP_SELF']);?></title>
 <style>
-
+.menu {
+  border: 2px solid black;
+  border-radius: 5px;
+}
 </style>
 <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,6 +21,21 @@
 <li><a href="/home">Home</a></li>
 <li><a href="/article">Articles</a></li>
 <li><a href="/contact">Contact</a></li>
+<?php use App\UserRole;
+      use Illuminate\Support\Facades\Auth;
+      $idUser =Auth::user();
+   if($idUser!=null){
+      $id = $idUser["id"];     
+      $user =UserRole::where('user_id', $id)->get();
+      $role;
+    foreach ($user as $object){
+       $role= $object->role_id;
+    }
+      if($role == 2){
+    echo "<li>" . "<a href='/controle'>Panneau de controle</a>" . "</li>";
+      }
+   }
+?>
 </ul>
 </div >
 <div class=" top-bar-right grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
@@ -48,6 +66,7 @@
 @yield('Liste_contact')
 @yield('tous_articles')
 @yield('Connexion')
+@yield('panneau_cntr')
 </div>
 <script>
       $(document).foundation();

@@ -27,7 +27,8 @@ class ContactController extends Controller
         $contact->contact_message = $request->contact_message;
         $contact->post_date = date('Y-m-d H:i:s');
         $contact->save();
-        $liste = Contact::all();
+         $last_id = Contact::get()->last()->id;
+        $liste = Contact::find([$last_id,$last_id - 1, $last_id - 2]);
         if($contact->save()){  
           return view('ViewContact',[
               'name'=>$request->contact_name,
@@ -37,8 +38,10 @@ class ContactController extends Controller
     }
 
     public function AfficheListeContact(){
-        $liste = Contact::all();
-         return view('ViewContact',['listes'=>$liste]);
+        $last_id = Contact::get()->last();
+        $id = $last_id['id'];
+        $liste = Contact::find([$id,$id - 1, $id - 2]);
+        return view('ViewContact',['listes'=>$liste]);
         
     }
 
