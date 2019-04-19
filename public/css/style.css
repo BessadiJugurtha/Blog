@@ -1,0 +1,34 @@
+
+.a1:hover,.a2:hover,.a3:hover {
+	background-color: lightgray;
+	color: #007BFF;
+}
+
+.a1,.a2,.a3 {
+	background-color: #007BFF;
+	color: white;
+	border-radius: 15px 50px 30px; 
+}
+
+.a1:active, .a2:active, .a3:active {
+	background-color: white;
+	color: #007BFF;
+}
+
+body>div>ul {
+	border-radius: 15px;
+ 	border: 2px solid #007BFF;
+}
+
+.p1 {
+	font-size: 100px;
+	/*margin-top: -40px;*/
+	letter-spacing: 3px;
+	color: white;
+  	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.p1:hover {
+  font-size: 120px; 
+}
+

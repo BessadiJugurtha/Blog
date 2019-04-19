@@ -5,15 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title><?php echo str_replace(dirname($_SERVER['PHP_SELF']).'/', '', $_SERVER['PHP_SELF']);?></title>
 <style>
-.menu {
-  border: 2px solid black;
-  border-radius: 5px;
-}
+  
 </style>
 <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body style="background-color:#EEEEEE;">
 <div class="top-bar fixed-top " style="height: 9%;">
 <div class="top-bar-left nav nav-tabs">
 <ul class="menu ">
@@ -37,6 +35,7 @@
    }
 ?>
 </ul>
+
 </div >
 <div class=" top-bar-right grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
 <ul class="row menu-text" style="list-style:none;">
@@ -50,13 +49,15 @@
        {{ Auth::user()->name }} <span class="caret"></span>
   </li>
   <li><a href="{{ url('/deconnexion') }}"><button type="button" class="btn btn-primary btn-sm" >Deconnexion</button></a></li>   
+
   @endif
 </ul>
 </div>
 </div>
-<div class="callout large primary" style="height: 40%;">
-<div class="column text-center" style="margin-top: 4%;">
+<div class="callout large primary" style="height: 40%; ">
+<div class="column text-center" style="margin-top: 4%; ">
 @yield('content')
+
 </div>
 </div>
 <div class="container">
