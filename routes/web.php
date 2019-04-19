@@ -11,9 +11,7 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
 Route::get('/home', 'HomeController@index');
 //##pour test des roles 
 // Route::get('/article', [
