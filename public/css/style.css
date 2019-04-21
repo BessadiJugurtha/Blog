@@ -1,16 +1,16 @@
 
-.a1:hover,.a2:hover,.a3:hover {
+.a1:hover,.a2:hover,.a3:hover,.a4:hover {
 	background-color: lightgray;
 	color: #007BFF;
 }
 
-.a1,.a2,.a3 {
+.a1,.a2,.a3,.a4 {
 	background-color: #007BFF;
 	color: white;
 	border-radius: 15px 50px 30px; 
 }
 
-.a1:active, .a2:active, .a3:active {
+.a1:active, .a2:active, .a3:active, .a4:active {
 	background-color: white;
 	color: #007BFF;
 }
@@ -32,3 +32,21 @@ body>div>ul {
   font-size: 120px; 
 }
 
+ .jumbotron {
+	background-color: rgb(48, 61, 59);
+	margin: 1%;
+	
+	}
+	.nav-prin{
+		height:250px;
+		background-color: rgb(130, 130, 134);
+	}
+	
+	.top-bar{
+		border:solid 1px black ;
+		height: 12%;
+		 
+	} 
+body{
+	background-color: rgb(252, 240, 225);
+}

@@ -28,11 +28,24 @@ Route::get('/controle', [
     'roles' => ['Admin'],
     ]);
 
-    Route::post('/ajoutRole', [
-        'uses' => 'HomeController@ajouterRole',
+    Route::post('/gererUser', [
+        'uses' => 'HomeController@gererUser',
         'as' => 'ViewControle',
         'middleware' => 'roles',
         'roles' => ['Admin'],
+        ]);
+
+        
+    
+    Route::get('/profil', [
+        'uses' => 'UserController@profil',
+        'as' => 'ViewProfil',
+        'middleware' => 'roles',
+        'roles' => ['User'],
+        ]);
+    Route::post('/profil', [
+        'uses' => 'UserController@modifierPhoto',
+
         ]);
 
 Route::get('/article/{post_name}', 'ArticleController@show');

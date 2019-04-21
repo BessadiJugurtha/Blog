@@ -23,7 +23,7 @@ class HomeController extends Controller
         return view("ViewControle",compact('users'));
     }
 
-    public function ajouterRole(Request $request ){
+    public function gererUser(Request $request ){
         $utilisateur = User::where('id',$request['id'])->first();
         $utilisateur->roles()->detach();
         if($request['role-user']){
@@ -31,6 +31,9 @@ class HomeController extends Controller
         }
         if($request['role-admin']){
             $utilisateur->roles()->attach(Role::where('nom','Admin')->first());
+        }
+        if($request['supprimer']){
+            $utilisateur->delete();
         }
         return redirect('/controle');
     }

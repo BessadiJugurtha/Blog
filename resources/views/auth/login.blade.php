@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@section('content')
+<p class="p1">Connexion</p>
+@endsection
 @section('Connexion')
 <div class="row grid-x grid-margin-x small-up-1 medium-up-2 large-up-2 ">
     <div class="cell col-md-6">
