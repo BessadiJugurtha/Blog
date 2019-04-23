@@ -11,8 +11,9 @@
 <div class="  cell col-md-4">
 <div class=" jumbotron ">
 <h3 style="color :white; font-weight:bold;">{{ $post->post_name }}</h3>
-<p><img class="img-thumbnail" src="img/img.jpg" alt="image of a planet called Pegasi B"></p>
-<p class="lead"><a style="color :white;" href="article/{{ $post->post_name }}">{{ $post->post_title }}</a></p>
+<p><img class="img-thumbnail" src="img/{{$post->id}}.jpg" alt="image of a planet called Pegasi B"></p>
+<p class="lead"><a  href="article/{{ $post->post_name }}">{{ $post->post_title }}</a></p>
+<p style="color :white;">{{date('d-m-Y', strtotime($post->post_date))}}</p>
 </div>
 </div>
 @endforeach

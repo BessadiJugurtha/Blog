@@ -13,13 +13,26 @@ class ArticleController extends Controller
        // $this->middleware('auth');
     }
    public function index(){
-    $articles = Post::all();
-    return view('ViewArticle', ['articles'=>$articles]);
+    $articles = Post::orderBy('post_date','desc')->get();
+    $tabArticles=[];
+    for($i = 3; $i<=6;$i++){
+        $tabArticles[$i]=$articles[$i];
+    }
+    return view('ViewArticle', ['articles'=>$tabArticles]);
    }
+
+   public function indexPage2(){
+    $articles = Post::orderBy('post_date','desc')->get();
+    $tabArticles=[];
+    for($i = 7; $i<=9;$i++){
+        $tabArticles[$i]=$articles[$i];
+    }
+    return view('ViewArticlePage2', ['articles'=>$tabArticles]);
+  
+}
 
    public function show($post_name){
        $post = Post::where('post_name', $post_name)->first();
-       
        return view('AfficherUnArticle', ['post' => $post]);
     }
    

@@ -13,14 +13,15 @@
 <div class="callout jumbotron" style = "height : 10%;">
 <ul class="menu simple">
 <li><a style="color :white;">Auteur :{{$article->author->name}}</a></li>
-<li style="color :white;">{{date('d-m-Y', strtotime($article->post_date))}} </li>
+<li style="color :white;">{{date('d-m-Y', strtotime($article->post_date))}}</li>
 </ul>
 </div>
+
 @endforeach
 </div>
 <div>
     <ul class="row  " style="list-style:none; margin-left:50%;">
-        <li style="display: inline-block;color:blue;">1</li>
+        <li style="display: inline-block;color:blue;"><a href="/article">1</a></li>
         <li style="margin-left:10px; display: inline-block; color:black;"><a href="/article2">2</a></li>
     </ul>
 </div>

@@ -12,6 +12,13 @@ class UserController extends Controller
         return view('ViewProfil',['user'=>Auth::user()]);
     }
 
+    public function deconnecter(){
+        Auth::logout();
+        return redirect('/home');
+        
+    
+    }
+
     public function modifierPhoto( Request $request){
         $avatarURI = null;
         if($request->hasfile('avatar')){

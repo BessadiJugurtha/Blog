@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/home', 'HomeController@index');
+Route::get('/', 'HomeController@accueilProjet');
 //##pour test des roles 
 // Route::get('/article', [
 // 'uses' => 'ArticleController@index',
@@ -20,16 +20,17 @@ Route::get('/home', 'HomeController@index');
 // 'middleware' => 'roles',
 // 'roles' => ['Admin']
 // ]);
+Route::get('/home', 'HomeController@index');
 Route::get('/article','ArticleController@index');
 Route::get('/controle', [
-    'uses' => 'HomeController@controle',
+    'uses' => 'AdminController@controle',
     'as' => 'ViewControle',
     'middleware' => 'roles',
     'roles' => ['Admin'],
     ]);
 
     Route::post('/gererUser', [
-        'uses' => 'HomeController@gererUser',
+        'uses' => 'AdminController@gererUser',
         'as' => 'ViewControle',
         'middleware' => 'roles',
         'roles' => ['Admin'],
@@ -47,12 +48,14 @@ Route::get('/controle', [
         'uses' => 'UserController@modifierPhoto',
 
         ]);
+     
 
 Route::get('/article/{post_name}', 'ArticleController@show');
+Route::get('/article2', 'ArticleController@indexPage2');
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@store');
 Route::get('/contact', 'ContactController@AfficheListeContact');
-Route::get('/deconnexion', 'DeconnexionController@deconnecter');
+Route::get('/deconnexion', 'UserController@deconnecter');
 
 Auth::routes();
 
