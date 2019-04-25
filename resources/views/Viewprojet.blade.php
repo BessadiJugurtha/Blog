@@ -1,11 +1,22 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
 <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
     body{
-      background-image:url('img2/fond3.jpg');
-      background-repeat: no-repeat;
+      background: url('img2/fond3.jpg') no-repeat center center fixed;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width:100%;
     }
 </style>
+</head>
 <body>
 <div  class="container text-center small-up-1 medium-up-2 large-up-3">
 <h1 class="display-2">Bienvenus</h1>
@@ -27,3 +38,5 @@ dans le but de mettre en pratique toutes les connaissance aquisent pendant ce co
 </p>
 </div>
 </body>
+
+</html>
