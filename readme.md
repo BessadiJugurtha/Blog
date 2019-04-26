@@ -1,17 +1,17 @@
-##Projet de création d’une application web (Blog)
+## Projet de création d’une application web (Blog)
 Dans le cadre d'un projet en Programmation web coté serveur on a développé un site web(Blog) en utilisant le framwork Laravel.
 Ce Blog permet aux utilisateurs de consulter et écrire des postes. un utilisateur a aussi la possibilité de s'enregistrer (créer un compte), pour pouvoir devenir membre actif dans le blog.
 
-#Conditions préalables 
+# Conditions préalables 
 Pour utiliser cette application,vous devez disposer des éléments suivants : 
 * PHP version 5.5.9 minimum 
 * SQLite (configurer PHP et Laravel pour connecter avec SQLite)
 * Composer
 * Git 
 
-#Commencer 
+# Commencer 
 
-#Installation
+# Installation
 Pour commencer à utiliser cette application il faut suivre ces étapes d'installation:
  > Etape 01: ouvrez un terminal et placez-vous dans le répertoir dans lequel voulez-vous intaller l'applicationExécuter et exécuter ces commandes : 
   1. git clone https://github.com/BessadiJugurtha/Blog.git
