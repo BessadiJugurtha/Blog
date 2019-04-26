@@ -30,5 +30,21 @@ Pour commencer à utiliser cette application il faut suivre ces étapes d'instal
  > Etape 04: Testez l'application 
   1. dans le terminal lancez le serveur : php artisan serve
   2. ouvrez une page web et tapez URL : http://localhost:8000
- >** remarque : en cas d'erreur à cause de la bibliothéque "image intervention", il faut alors l'installer en executant dans le terminal: composer require intervention/image 
+ >** **remarque** : en cas d'erreur à cause de la bibliothéque "image intervention", il faut alors l'installer en executant dans le terminal: **composer require intervention/image** 
+
+ ## Seurfez et découvrer le blog
+ 
+ Dans cette partie vous trouverez tous ce qu'on a implimenté et le guide pour tester toutes les fonctionnalités
+
+ > Une fois le serveur lancé, lorsque vous insérez http://localhost:8000 dans la barre d'url une page est chargée,il s'agit de **la page de garde du projet**, dans cette page on trouve une petite présentation du  projet, et les noms des collaborateurs qui ont participés à ce travail, et enfin un lien(Blog) en bas de la page qui nous oriente vers le home du blog.
+
+ # Home 
+ > l'url de cette page [home](http://localhost:8000/home)
+ dans cette partie du site (home), on a une barre de navigation contenant les boutton suivant : 
+ * **Home** : 
+ * **Article** : dirige vers la page [Article](http://localhost:8000/article) où on peut trouver 
+ * **Contact** 
+ * **Se connecter** 
+
+
  
