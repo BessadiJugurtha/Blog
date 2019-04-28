@@ -1,5 +1,5 @@
- __***Projet de création d’une application web (Blog)***__
-![page_garde](img2/page_garde.PNG)
+ # ***Projet de création d’une application web (Blog)***
+![page_garde](public/img2/page_garde.png)
 Dans le cadre d'un projet en Programmation web coté serveur on a développé un site web(Blog) en utilisant le Framework Laravel.
 Ce Blog permet aux utilisateurs de consulter et écrire des postes. un utilisateur a aussi la possibilité de s'enregistrer (créer un compte), pour pouvoir devenir membre actif dans le blog.
 
