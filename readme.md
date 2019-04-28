@@ -1,4 +1,5 @@
-## Projet de création d’une application web (Blog)
+[center]# __***Projet de création d’une application web (Blog)***__[/center]
+[img]img2/page_garde.PNG[/img]
 Dans le cadre d'un projet en Programmation web coté serveur on a développé un site web(Blog) en utilisant le Framework Laravel.
 Ce Blog permet aux utilisateurs de consulter et écrire des postes. un utilisateur a aussi la possibilité de s'enregistrer (créer un compte), pour pouvoir devenir membre actif dans le blog.
 
@@ -9,9 +10,9 @@ Pour utiliser cette application, vous devez disposer des éléments suivants :
 * Composer
 * Git 
 
-# Commencer 
+# __Commencer__ 
 
-# Installation
+# __Installation__
 Pour commencer à utiliser cette application il faut suivre ces étapes d'installation:
  > Etape 01: ouvrez un terminal et placez-vous dans le répertoire dans lequel voulez-vous installer l'application Exécuter et exécuter ces commandes : 
   1. git clone https://github.com/BessadiJugurtha/Blog.git
@@ -32,7 +33,7 @@ Pour commencer à utiliser cette application il faut suivre ces étapes d'instal
   2. ouvrez une page web et tapez URL : http://localhost:8000
  >** **remarque** : en cas d'erreur à cause de la bibliothèque "image intervention", il faut alors l'installer en exécutant dans le terminal: **composer require intervention/image** 
 
- # Surfez et découvrez le blog
+ # __Surfez et découvrez le blog__
  
  Dans cette partie vous trouverez tous ce qu'on a implémenté et le guide pour tester toutes les fonctionnalités
 
@@ -67,30 +68,30 @@ Une fois connecté un bouton de déconnexion est affiché à la place du bouton 
  >Quand en envoi un message, un message est affiché en dessous du formulaire confirmant la bonne réception du message, et ce dernier et directement affiché parmi les 3 derniers.
 
  ## Les Fonctionnalités 
- 1. **Authentification** 
+ 1. **Authentification**     
  Pour tester: essayez d'accéder à [Contact](http://localhost:8000/contact) sans s'identifier, vous allez voir que cela n'est pas possible vous serez réorienter vers la page login, car cette partie demande une authentification. identifiez-vous vous allez voir que maintenant vous avez accès à contact
 
  > Si vous souhaitez rendre cette partie sans authentification, commentez la ligne 15 dans app/Http/Controllers/ContactController 
 
- 2. **Rôles**
+ 2. **Rôles**    
 Deux rôles ont étaient créer (Admin et User), vous pouvez voir ça dans la table "rôles"(dans la base de données), une autre table "user_role" assure le stockage des id_user et les rôles qui leur ont étés attribués.
 
 **Pour le rôle "User"**: chaque utilisateur qui crée un compte, le rôle "User" lui sera attribué automatiquement, pour tester ça créer un compte et regardez dans la table "user_role" vous allez voir votre "id_user" et le "id_role" du rôle qui vous a été attribué (C.A.D "User")
 
 **Pour le rôle "Admin"**: Pour tester, j'ai créer un administrateur, se dernier est créer quand on a exécuté les seeder.
 connectez vous en tant que administrateur en utilisant : 
- - email : jugurtha@gmail.com
- - mot de passe : djigou89
+ - email : jugurtha@gmail.com      
+ - mot de passe : djigou89     
 Une fois connecter vous allez voir afficher un nouveau onglet "Panneau de contrôle" dans la barre de navigation, cette page est accessible que si on est administrateur
 
- 3. **Panneau de Contrôle**
+ 3. **Panneau de Contrôle**   
  en tant que Administrateur vous avez accès à cette page : il s'agit d'un tableau de bord d'administration du site, car vous pouvez gérer les rôles attribués aux users(ajouter, supprimer un rôle d'un user), et aussi supprimer  des users.
 
  Essayez ça: 
  - supprimez par exemple un user, et vous allez voir qu'il sera supprimé de la table user et il ne s'affichera pas dans le tableau de bord.
  - créer un compte, et regardez s'il s'ajoute au tableau de bord, une fois ajouter attribuez lui le rôle administrateur en cliquant sur la "checkbox" correspondante, maintenant cette utilisateur crée à le rôle administrateur et peut accéder à la page "panneau de contrôle"
 
- 4. **Profil utilisateur**
+ 4. **Profil utilisateur**  
   Un utilisateur quand il est connecté, il peut accéder à son profil en cliquant sur le bouton "profil" dans la partie droite de la barre de navigation, et il peut modifier sa photo.
   
   > **important** malheureusement des fois ça marche et des fois non, on sait pas c'est quoi le problème, on a voulu aussi permettre à l'utilisateur dans cette page de modifier des information le concernant mais on a été pressés par le temps
