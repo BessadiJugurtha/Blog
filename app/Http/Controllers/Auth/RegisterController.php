@@ -68,6 +68,8 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+        /*quand un enregistrement est effectué on attribue le role 'User' 
+        a l'utilisateur qui s'est enregistré*/
         $user->roles()->attach(Role::where('nom', 'User')->first());
         return $user;
     }

@@ -1,3 +1,4 @@
+<!-- affichage d'un article -->
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
@@ -101,9 +102,7 @@ body>div>ul {
 </div>
 </div>
 <div class=" jumbotron container cell col-md-8">
-
 <h3>{{ $post->post_title }}</h3>
-<img  src="{img/{{ $post->post_author }}.jpg}">
 <p>{{ $post->post_content }}</p>
 <div class="  callout">
 <ul class="menu simple">

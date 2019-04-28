@@ -1,3 +1,4 @@
+<!--  des formulaire de connexion et enregistrement -->
 @extends('layouts.main')
 @section('content')
 <p class="p1">Connexion</p>
@@ -7,7 +8,7 @@
     <div class="cell col-md-6">
     <div class="callout ">
             <div class="panel panel-default">
-                <div class="panel-heading">Connexion</div>
+                <div class="panel-heading"><h3><strong>Connexion</strong></h3></div>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
@@ -70,7 +71,7 @@
     <div class="cell col-md-6">
     <div class="callout ">
             <div class="panel panel-default">
-                <div class="panel-heading">S'enregistrer</div>
+                <div class="panel-heading"><h3><strong>Créer un Compte</strong></h3></div>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -129,7 +130,7 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Enregistrer
+                                    Inscription
                                 </button>
         
                             </div>
