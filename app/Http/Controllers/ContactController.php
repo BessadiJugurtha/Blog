@@ -49,7 +49,6 @@ class ContactController extends Controller
         $id = $last_id['id'];
         $liste = Contact::find([$id,$id - 1, $id - 2]);
         return view('ViewContact',['listes'=>$liste]);
-        
     }
 
 

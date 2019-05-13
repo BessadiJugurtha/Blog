@@ -19,9 +19,9 @@ class UsersTableSeeder extends Seeder
         }); 
     //création d'un utilisateur pour lui donner le role admin
         DB::table('users')->insert([
-                'name' => "jugurtha",
-                'email' => "jugurtha@gmail.com",
-                'password' => bcrypt('djigou89'),
+                'name' => "youva",
+                'email' => "chougar@gmail.com",
+                'password' => bcrypt('a123456'),
             ]);
 
     }

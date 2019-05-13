@@ -40,7 +40,7 @@ Route::get('/contact', 'ContactController@index');
 /*routes envoyer un message  */
 Route::post('/contact', 'ContactController@store');
 
-/*routes affichage des trois derniers messages envoyés  */
+/*routes affichage des trois derniers messages envoyés */
 Route::get('/contact', 'ContactController@AfficheListeContact');
 
 /*route panneau de cotrole: accés limité => admin seulement */

@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <!-- <div class=" container row grid-x grid-margin-x small-up-1 medium-up-2 large-up-3 "> -->
 @foreach($posts as $post)
-<div class="  cell col-md-4">
+<div class="cell col-md-4">
 <div class=" jumbotron ">
 <h3 style="color :white; font-weight:bold;">{{ $post->post_name }}</h3>
 <p><img class="img-thumbnail" src="img/{{$post->id}}.jpg" alt="image of a planet called Pegasi B"></p>

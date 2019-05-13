@@ -35,7 +35,7 @@
 @isset($name)
 @section('Msg_enregistre')
 <div class='comment1'>
-    <h3>{{$name . ' votre message a ete  ajoute Merci!!'}}</h3>
+    <h3>{{$name . ' votre message a ete ajoute Merci!!'}}</h3>
 </div>
 @endsection
 @endisset

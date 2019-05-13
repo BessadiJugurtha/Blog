@@ -11,7 +11,7 @@ class ArticleController extends Controller
     public function __construct()
     {
     /*decommenter cette ligne pour pouvoir tester l'Authentification sur la page article*/
-       // $this->middleware('auth');
+       $this->middleware('auth');
     }
    public function index(){
     //récupérer dans la varible $articles tous les post selon leur date, avec un ordre descendant
